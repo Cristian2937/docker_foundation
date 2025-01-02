@@ -1,0 +1,7 @@
+services:
+  apache-hop:
+    build:
+      context: .
+    image: apache-hop
+    ports:
+      - "8081:8080"
