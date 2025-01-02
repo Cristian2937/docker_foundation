@@ -1,11 +1,11 @@
 services:
-  postgres:
+  postgres_superset_link:
     image: postgres:17
-    container_name: postgres
+    container_name: postgres_superset_link
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password1
-      POSTGRES_DB: dwh
+      POSTGRES_DB: superset_link
     volumes:
       - postgres_data:/var/lib/postgresql/data:rw
     ports:
