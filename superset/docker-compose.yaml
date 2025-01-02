@@ -15,7 +15,7 @@ services:
       - superset_network
 
   superset_link:
-    image: apache/superset:latest
+    image: apache/superset:4.0.2
     ports:
       - "8088:8088"
     depends_on:
